@@ -6,7 +6,6 @@ public class Vehicle {
 	// attributes 
 	
 	private int id;
-	private float price;
 	private int wheels; 
 	private String colour;
 	private String model; 
@@ -15,19 +14,16 @@ public class Vehicle {
 		super();	
 		}
 	
-	public Vehicle(int id, float price, int wheels, String colour, String model) {
+	public Vehicle(int id, int wheels, String colour, String model) {
 		super();
 		
 		this.setId(id);
-		this.setPrice(price);
 		this.setWheels(wheels);
 		this.setColour(colour);
 		this.setModel(model); 
 	
 	}
 	
-	
-
 	public void engineSize() {
 		System.out.println("Unknown engine size");
 	}
@@ -39,13 +35,6 @@ public class Vehicle {
 	}  
 	public void setId(int id) {
 		this.id = id; 
-	}
-	
-	public float getPrice() {
-		return this.price;
-	}
-	public void setPrice(float price) {
-		this.price = price; 
 	}
 	
 	public int getWheels() {
@@ -68,6 +57,22 @@ public class Vehicle {
 		this.model = model;
 	}
 	
+	
+	public void print() {
+		System.out.println("\nid: ");
+		System.out.println(this.id);
+		
+		
+		System.out.println("\nwheels: ");
+		System.out.println(this.wheels);
+		
+		System.out.println("\ncolour: ");
+		System.out.println(this.colour);
+		
+		System.out.println("\nmodel: ");
+		System.out.println(this.model);
+		
+	}
 	
 }
 
